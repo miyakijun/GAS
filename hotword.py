@@ -30,7 +30,7 @@ from google.assistant.library.file_helpers import existing_file
 
 def process_event(event):
     """Pretty prints events.
-
+    miyaki modify
     Prints all events that occur with two spaces between each new
     conversation and a single space between turns of a conversation.
 
@@ -45,8 +45,6 @@ def process_event(event):
     if (event.type == EventType.ON_CONVERSATION_TURN_FINISHED and
             event.args and not event.args['with_follow_on_turn']):
         print()
-       strHello = 'Hello Python' 
-        print strHello
 
 def main():
     parser = argparse.ArgumentParser(
